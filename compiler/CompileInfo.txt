@@ -1,0 +1,231 @@
+Lexeme class | Beginning pos | Ending pos | Text 
+         281              14           17    "char" 
+         286              19           2B    "biosReadDiskSectors" 
+         261              2C           2C    "(" 
+         281              2D           30    "char" 
+         286              32           39    "cSectNum" 
+         263              3A           3A    "," 
+         282              3C           40    "short" 
+         286              42           4B    "sStartSect" 
+         263              4C           4C    "," 
+         281              4E           51    "char" 
+         286              53           5A    "cHeadNum" 
+         263              5B           5B    "," 
+         281              66           69    "char" 
+         286              6B           73    "cDriveNum" 
+         263              74           74    "," 
+         282              76           7A    "short" 
+         286              7C           83    "sESValue" 
+         263              84           84    "," 
+         282              86           8A    "short" 
+         286              8C           93    "sBXValue" 
+         262              94           94    ")" 
+         259              97           97    "{" 
+         286              9B           9D    "qwe" 
+         278              A1           A5    "__asm" 
+         259              AA           AA    "{" 
+         317              AF           B1    "MOV" 
+         289              B3           B4    "AH" 
+         263              B5           B5    "," 
+         285              B6           B9    "0x02" 
+         317              C3           C5    "MOV" 
+         290              C7           C8    "AL" 
+         263              C9           C9    "," 
+         286              CA           D1    "cSectNum" 
+         317              DF           E1    "MOV" 
+         296              E3           E4    "CX" 
+         263              E5           E5    "," 
+         286              E6           EF    "sStartSect" 
+         317              F4           F6    "MOV" 
+         305              F8           F9    "DH" 
+         263              FA           FA    "," 
+         286              FB          102    "cHeadNum" 
+         317             108          10A    "MOV" 
+         306             10C          10D    "DL" 
+         263             10E          10E    "," 
+         286             10F          117    "cDriveNum" 
+         317             124          126    "MOV" 
+         309             128          129    "ES" 
+         263             12A          12A    "," 
+         286             12B          132    "sESValue" 
+         317             138          13A    "MOV" 
+         292             13C          13D    "BX" 
+         263             13E          13E    "," 
+         286             13F          146    "sBXValue" 
+         319             14F          151    "INT" 
+         285             153          156    "0x13" 
+         260             15C          15C    "}" 
+         277             169          16E    "return" 
+         285             170          172    "0x1" 
+         264             173          173    ";" 
+         260             176          176    "}" 
+         281             17F          182    "char" 
+         286             184          19A    "readSectorsFromDiskette" 
+         261             19B          19B    "(" 
+         282             19C          1A0    "short" 
+         286             1A2          1A9    "sSectNum" 
+         263             1AA          1AA    "," 
+         282             1AC          1B0    "short" 
+         286             1B2          1B9    "sMemAddr" 
+         262             1BA          1BA    ")" 
+         259             1BD          1BD    "{" 
+         282             1C1          1C5    "short" 
+         286             1C7          1D5    "sIterationCount" 
+         264             1D6          1D6    ";" 
+         281             1DA          1DD    "char" 
+         286             1E0          1E9    "cRemainder" 
+         264             1EA          1EA    ";" 
+         282             1EE          1F2    "short" 
+         286             1F4          1FB    "sESValue" 
+         263             1FC          1FC    "," 
+         286             1FE          207    "sStartSect" 
+         264             208          208    ";" 
+         286             20F          218    "sStartSect" 
+         268             21A          21A    "=" 
+         285             21C          21E    "0x2" 
+         264             21F          21F    ";" 
+         286             226          22D    "sESValue" 
+         268             22F          22F    "=" 
+         286             231          238    "sMemAddr" 
+         272             239          239    "/" 
+         285             23A          23D    "0x10" 
+         264             23E          23E    ";" 
+         286             246          254    "sIterationCount" 
+         268             256          256    "=" 
+         286             258          25F    "sSectNum" 
+         272             260          260    "/" 
+         285             261          264    "0x40" 
+         264             265          265    ";" 
+         286             269          272    "cRemainder" 
+         268             274          274    "=" 
+         286             276          27D    "sSectNum" 
+         269             27F          27F    "-" 
+         286             281          28F    "sIterationCount" 
+         271             290          290    "*" 
+         285             291          294    "0x40" 
+         264             295          295    ";" 
+         275             29B          29F    "while" 
+         261             2A1          2A1    "(" 
+         286             2A2          2B0    "sIterationCount" 
+         262             2B1          2B1    ")" 
+         259             2B5          2B5    "{" 
+         286             2BA          2CC    "biosReadDiskSectors" 
+         261             2CD          2CD    "(" 
+         285             2CE          2D1    "0x40" 
+         263             2D2          2D2    "," 
+         286             2D4          2DD    "sStartSect" 
+         263             2DE          2DE    "," 
+         285             2E0          2E2    "0x0" 
+         263             2E3          2E3    "," 
+         285             2E5          2E7    "0x0" 
+         263             2E8          2E8    "," 
+         286             2EA          2F1    "sESValue" 
+         263             2F2          2F2    "," 
+         285             2F4          2F6    "0x0" 
+         262             2F7          2F7    ")" 
+         264             2F8          2F8    ";" 
+         286             2FD          306    "sStartSect" 
+         268             308          308    "=" 
+         286             30A          313    "sStartSect" 
+         270             315          315    "+" 
+         285             317          31A    "0x40" 
+         264             31B          31B    ";" 
+         286             320          327    "sESValue" 
+         268             329          329    "=" 
+         286             32B          332    "sESValue" 
+         270             334          334    "+" 
+         285             336          33A    "0x800" 
+         264             33B          33B    ";" 
+         286             34B          359    "sIterationCount" 
+         268             35B          35B    "=" 
+         286             35D          36B    "sIterationCount" 
+         269             36D          36D    "-" 
+         285             36F          371    "0x1" 
+         264             372          372    ";" 
+         260             376          376    "}" 
+         277             37D          382    "return" 
+         285             384          386    "0x1" 
+         264             387          387    ";" 
+         260             38B          38B    "}" 
+         280             390          393    "void" 
+         286             395          398    "main" 
+         261             39A          39A    "(" 
+         262             39D          39D    ")" 
+         259             3A0          3A0    "{" 
+         286             3A4          3BA    "readSectorsFromDiskette" 
+         261             3BB          3BB    "(" 
+         285             3BC          3BF    "0x40" 
+         263             3C0          3C0    "," 
+         285             3C1          3C6    "0x7E00" 
+         262             3C7          3C7    ")" 
+         264             3C8          3C8    ";" 
+         278             3D1          3D5    "__asm" 
+         259             3D9          3D9    "{" 
+         320             3DE          3E0    "JMP" 
+         285             3E2          3E7    "0x0000" 
+         265             3E8          3E8    ":" 
+         285             3E9          3EE    "0x7E00" 
+         260             3F2          3F2    "}" 
+         260             3F5          3F5    "}" 
+
+ *** ERRORS *** 
+
+ (9B 9D) error: 'qwe' : unknown identifier
+ (A1 A5) error: '__asm' : syntax error
+ (AA AA) error: '{' : syntax error
+ (AF B1) error: 'MOV' : syntax error
+ (AF B1) error: 'MOV' : syntax error
+ (B3 B4) error: 'AH' : syntax error
+ (B3 B4) error: 'AH' : syntax error
+ (B5 B5) error: ',' : syntax error
+ (C3 C5) error: 'MOV' : syntax error
+ (C3 C5) error: 'MOV' : syntax error
+ (C7 C8) error: 'AL' : syntax error
+ (C7 C8) error: 'AL' : syntax error
+ (C9 C9) error: ',' : syntax error
+ (DF E1) error: 'MOV' : syntax error
+ (DF E1) error: 'MOV' : syntax error
+ (E3 E4) error: 'CX' : syntax error
+ (E3 E4) error: 'CX' : syntax error
+ (E5 E5) error: ',' : syntax error
+ (F4 F6) error: 'MOV' : syntax error
+ (F4 F6) error: 'MOV' : syntax error
+ (F8 F9) error: 'DH' : syntax error
+ (F8 F9) error: 'DH' : syntax error
+ (FA FA) error: ',' : syntax error
+ (108 10A) error: 'MOV' : syntax error
+ (108 10A) error: 'MOV' : syntax error
+ (10C 10D) error: 'DL' : syntax error
+ (10C 10D) error: 'DL' : syntax error
+ (10E 10E) error: ',' : syntax error
+ (124 126) error: 'MOV' : syntax error
+ (124 126) error: 'MOV' : syntax error
+ (128 129) error: 'ES' : syntax error
+ (128 129) error: 'ES' : syntax error
+ (12A 12A) error: ',' : syntax error
+ (138 13A) error: 'MOV' : syntax error
+ (138 13A) error: 'MOV' : syntax error
+ (13C 13D) error: 'BX' : syntax error
+ (13C 13D) error: 'BX' : syntax error
+ (13E 13E) error: ',' : syntax error
+ (14F 151) error: 'INT' : syntax error
+ (15C 15C) error: '}' : syntax error
+ (176 176) error: '}' : syntax error
+ (17F 182) error: 'char' : syntax error
+ (184 19A) error: 'readSectorsFromDiskette' : unknown identifier
+ (19C 1A0) error: 'short' : syntax error
+ (1A2 1A9) error: 'sSectNum' : syntax error
+ (1A2 1A9) error: 'sSectNum' : syntax error
+ (1AA 1AA) error: ',' : syntax error
+ (1AA 1AA) error: ',' : syntax error
+ (1AC 1B0) error: 'short' : syntax error
+ (1B2 1B9) error: 'sMemAddr' : unknown identifier
+ (1BA 1BA) error: ')' : syntax error
+ (231 238) error: 'sMemAddr' : unknown identifier
+ (258 25F) error: 'sSectNum' : unknown identifier
+ (276 27D) error: 'sSectNum' : unknown identifier
+ (38B 38B) error: '}' : syntax error
+ (390 393) error: 'void' : syntax error
+ (395 398) error: 'main' : unknown identifier
+ (3A0 3A0) error: '{' : syntax error
+ (3A4 3BA) error: 'readSectorsFromDiskette' : unknown identifier
